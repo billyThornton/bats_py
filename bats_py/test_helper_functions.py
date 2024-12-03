@@ -1,20 +1,3 @@
-import pytest
-
-
-class TestReport:
-    def __init__(self, filename):
-        self.filename = filename
-        # Create the file in the initializer
-        with open(self.filename, 'w') as f:
-            f.write("Test Report\n")
-            f.write("===========\n\n")
-
-    def add_message(self, message):
-        # Open the file in append mode and add the message
-        with open(self.filename, 'a') as f:
-            f.write(message + "\n")
-
-
 def is_list_of_lists(obj, subtype):
     """
     Used to test if an object is a list of lists of a certain type

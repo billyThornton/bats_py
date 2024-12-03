@@ -3,7 +3,7 @@ Class for creating test report objects.
 Heavily relies on ResultsArray to gather the data for use in the report.
 
 """
-from bats_24.bats_py.ResultsArray import ResultArray
+from bats_py.ResultsArray import ResultArray
 
 class TestReport:
     max_basic_mark = 100
